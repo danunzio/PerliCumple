@@ -144,8 +144,8 @@ export default function PortfolioPage() {
 
       {noMusic && (
         <div className="px-4 pb-3 animate-fade-in">
-          <div className="bg-accent/15 border border-accent/30 rounded-xl px-4 py-3 text-center">
-            <p className="text-accent font-semibold text-sm">Acá falta música!!!</p>
+          <div className="bg-accent/15 border border-accent/30 rounded-xl px-4 py-3 text-center animate-pulse-soft">
+            <p className="text-accent font-semibold text-sm">Acá falta música para poder verme!!!</p>
           </div>
         </div>
       )}

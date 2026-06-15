@@ -16,13 +16,19 @@ export const metadata: Metadata = {
     siteName: "Perli Cumple",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://perli-cumple.vercel.app/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Perlita Rockera",
       },
     ],
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Feliz Cumple Perlita 🎉",
+    description: "Para celebrar los 3 años de Perlita!. Hecho con mucho amor!.",
+    images: ["https://perli-cumple.vercel.app/og-image.jpg"],
   },
 };
 
