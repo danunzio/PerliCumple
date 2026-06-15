@@ -7,6 +7,21 @@ export const metadata: Metadata = {
   title: "Feliz Cumple Perlita 🎉",
   description:
     "Playlist especial para celebrar los 3 años de Perlita. Hecho con mucho amor.",
+  openGraph: {
+    title: "Feliz Cumple Perlita 🎉",
+    description: "Playlist especial para celebrar los 3 años de Perlita. Hecho con mucho amor.",
+    url: "https://perli-cumple.vercel.app",
+    siteName: "Perli Cumple",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Perlita Rockera",
+      },
+    ],
+    type: "website",
+  },
 };
 
 export const viewport: Viewport = {

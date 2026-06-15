@@ -30,7 +30,7 @@ export default function HomePage() {
       <header className="px-4 pt-[max(3rem,env(safe-area-inset-top))] pb-6">
         <div className="flex items-center gap-4 mb-2">
           <img
-            src="/media/fotos/b6c0b348-31df-46b1-a6d3-372915e448cc.jpg"
+            src="/media/fotos/3.jpg"
             alt="Perlita"
             className="w-14 h-14 rounded-full object-cover shadow-lg flex-shrink-0"
           />
