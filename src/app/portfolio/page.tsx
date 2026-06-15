@@ -41,7 +41,7 @@ export default function PortfolioPage() {
     totalPhotos,
   } = usePortfolio();
 
-  const [showNoMusicMsg, setShowNoMusicMsg] = useState(false);
+  const noMusic = !state.isPlaying && unlockedCount < totalPhotos;
   const [selectedPhoto, setSelectedPhoto] = useState<string | null>(null);
   const [selectedOriginalIndex, setSelectedOriginalIndex] = useState<number | null>(null);
   const [canClose, setCanClose] = useState(false);
@@ -50,11 +50,7 @@ export default function PortfolioPage() {
 
   const handlePhotoClick = useCallback(
     (originalIndex: number) => {
-      if (!state.isPlaying) {
-        setShowNoMusicMsg(true);
-        setTimeout(() => setShowNoMusicMsg(false), 2000);
-        return;
-      }
+      if (!state.isPlaying) return;
 
       if (isUnlocked(originalIndex)) {
         setSelectedPhoto(photos[originalIndex]);
@@ -146,10 +142,10 @@ export default function PortfolioPage() {
         </div>
       </div>
 
-      {showNoMusicMsg && (
+      {noMusic && (
         <div className="px-4 pb-3 animate-fade-in">
-          <div className="bg-black/60 backdrop-blur-sm rounded-xl px-4 py-3 text-center">
-            <p className="text-white font-semibold text-sm">Acá falta música!!!</p>
+          <div className="bg-accent/15 border border-accent/30 rounded-xl px-4 py-3 text-center">
+            <p className="text-accent font-semibold text-sm">Acá falta música!!!</p>
           </div>
         </div>
       )}
