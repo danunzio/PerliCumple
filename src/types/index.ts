@@ -34,6 +34,10 @@ export interface PlayerState {
   showLyrics: boolean;
   likedSongs: Set<string>;
   showQueue: boolean;
+  completedSongs: Set<string>;
+  rewardShown: boolean;
+  showReward: boolean;
+  rewardPending: boolean;
 }
 
 export type PlayerAction =
@@ -49,4 +53,5 @@ export type PlayerAction =
   | { type: "DISMISS_SPLASH" }
   | { type: "TOGGLE_LYRICS" }
   | { type: "TOGGLE_QUEUE" }
-  | { type: "TOGGLE_LIKE"; songId: string };
+  | { type: "TOGGLE_LIKE"; songId: string }
+  | { type: "DISMISS_REWARD" };

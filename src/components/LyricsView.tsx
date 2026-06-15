@@ -105,7 +105,7 @@ export default function LyricsView({
             {lines.map((line, idx) => (
               <p
                 key={idx}
-                className="text-xl leading-relaxed text-white/70"
+                className="text-xl leading-relaxed text-white/70 font-medium"
               >
                 {line}
               </p>

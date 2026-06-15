@@ -4,7 +4,7 @@ export const playlist: Song[] = [
   {
     "id": "01",
     "title": "A guardar",
-    "artist": "Artista",
+    "artist": "Tio Mati",
     "audioSrc": "/media/audio/A guardar.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/A guardar.jpg",
@@ -16,7 +16,7 @@ export const playlist: Song[] = [
   {
     "id": "02",
     "title": "A jugar, a jugar!!!",
-    "artist": "Artista",
+    "artist": "Tio Mati",
     "audioSrc": "/media/audio/A jugar, a jugar!!!.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/A jugar, a jugar!!!.jpg",
@@ -28,7 +28,7 @@ export const playlist: Song[] = [
   {
     "id": "03",
     "title": "Abro y Cierro Al Salir de la Cueva",
-    "artist": "Artista",
+    "artist": "Tio Mati",
     "audioSrc": "/media/audio/Abro y Cierro - Al Salir de la Cueva.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/Abro y Cierro - Al Salir de la Cueva.jpg",
@@ -40,7 +40,7 @@ export const playlist: Song[] = [
   {
     "id": "04",
     "title": "Abuelitos lindos",
-    "artist": "Artista",
+    "artist": "Mercedes Sosa",
     "audioSrc": "/media/audio/Abuelitos lindos.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/Abuelitos lindos.jpg",
@@ -51,20 +51,20 @@ export const playlist: Song[] = [
   },
   {
     "id": "05",
-    "title": "Abus Rodi y Eli”",
-    "artist": "Artista",
-    "audioSrc": "/media/audio/Abus Rodi y Eli”.mp3",
+    "title": "Abus Rodi y Eli",
+    "artist": "Tio Mati",
+    "audioSrc": "/media/audio/Abus Rodi y Eli.mp3",
     "coverType": "image",
-    "coverSrc": "/media/covers/Abus Rodi y Eli”.jpg",
+    "coverSrc": "/media/covers/Abus Rodi y Eli.jpg",
     "duration": 199,
-    "lyrics": "",
+    "lyrics": "El abuelito Rodi y la abuela Eli jugaban en el jardín,\r\ncon su nieta Perlita cantaban muy feliz.\r\nCuando el sol asomaba, el abuelo hacía así:\r\n¡MUUUUU!\r\n¡No, abuelito Rodi! ¡Eso es una vaca!\r\n\r\n[Verse 2]\r\nEl abuelito Rodi y la abuela Eli jugaban en el jardín,\r\ncon su nieta Perlita cantaban muy feliz.\r\nCuando el sol asomaba, la abuela hacía así:\r\n¡CUA, CUA, CUA!\r\n¡No, abuela Eli! ¡Eso es un pato!\r\n\r\n[Verse 3]\r\nEl abuelito Rodi y la abuela Eli jugaban en el jardín,\r\ncon su nieta Perlita cantaban muy feliz.\r\nCuando el sol asomaba, el abuelo hacía así:\r\n¡BEEEE!\r\n¡No, abuelito Rodi! ¡Eso es una oveja!\r\n\r\n[Verse 4]\r\nEl abuelito Rodi y la abuela Eli jugaban en el jardín,\r\ncon su nieta Perlita cantaban muy feliz.\r\nCuando el sol asomaba, la abuela hacía así:\r\n¡MIAU, MIAU!\r\n¡No, abuela Eli! ¡Eso es un gato!\r\n\r\n[Verse 5]\r\nEl abuelito Rodi y la abuela Eli jugaban en el jardín,\r\ncon su nieta Perlita cantaban muy feliz.\r\nCuando el sol asomaba, el abuelo hacía así:\r\n¡GUAU, GUAU!\r\n¡No, abuelito Rodi! ¡Eso es un perro!\r\n\r\n[Verse 6 - El final correcto y familiar]\r\nEl abuelito Rodi y la abuela Eli jugaban en el jardín,\r\ncon su nieta Perlita cantaban muy feliz.\r\nCuando el sol asomaba, los dos hacían así:\r\n¡JA, JA, JA, FELIZ!\r\n¡Sí, abuelos lindos! ¡Esa es su risa feliz!\r\n\r\n[Outro]\r\n¡Con Perlita, Eli y Rodi, la granja canta así!\r\nIña, Titi, Mami y Papi aplauden hasta el fin.\r\n¡Uno, dos y tres, jugamos otra vez!",
     "dedication": "",
     "accentColor": "#2196F3"
   },
   {
     "id": "06",
     "title": "En la selva de Perlita",
-    "artist": "Artista",
+    "artist": "Bob Marley",
     "audioSrc": "/media/audio/En la selva de Perlita.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/En la selva de Perlita.jpg",
@@ -76,7 +76,7 @@ export const playlist: Song[] = [
   {
     "id": "07",
     "title": "Facu y Abril",
-    "artist": "Artista",
+    "artist": "Tio Mati",
     "audioSrc": "/media/audio/Facu y Abril.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/Facu y Abril.jpg",
@@ -88,7 +88,7 @@ export const playlist: Song[] = [
   {
     "id": "08",
     "title": "Familia Rock",
-    "artist": "Artista",
+    "artist": "Charly García",
     "audioSrc": "/media/audio/Familia Rock.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/Familia Rock.jpg",
@@ -100,7 +100,7 @@ export const playlist: Song[] = [
   {
     "id": "09",
     "title": "Feliz Cumple",
-    "artist": "Artista",
+    "artist": "Serrat",
     "audioSrc": "/media/audio/Feliz Cumple.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/Feliz Cumple.jpg",
@@ -112,7 +112,7 @@ export const playlist: Song[] = [
   {
     "id": "10",
     "title": "Hermanos Queridos",
-    "artist": "Artista",
+    "artist": "Spinetta",
     "audioSrc": "/media/audio/Hermanos Queridos.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/Hermanos Queridos.jpg",
@@ -124,19 +124,19 @@ export const playlist: Song[] = [
   {
     "id": "11",
     "title": "Juego de manos",
-    "artist": "Artista",
+    "artist": "John Lennon",
     "audioSrc": "/media/audio/Juego de manos.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/Juego de manos.jpg",
     "duration": 138,
-    "lyrics": "",
+    "lyrics": "Damos un aplauso,\r\nescondo las manos,\r\nmuevo los deditos,\r\n¡saludan de lado!\r\nSuben a la nube,\r\nbajan con las gotas,\r\ncorren por el río,\r\n¡giran dando vueltas locas!\r\n\r\n[Verse 2 - Sumamos a Perlita]\r\nDamos un aplauso,\r\nescondo las manos,\r\nbaila hoy Perlita,\r\n¡mueve los deditos de lado!\r\nSuben a la nube,\r\nbajan con las gotas,\r\ncorren por el río,\r\n¡giran dando vueltas locas!\r\n\r\n[Verse 3 - Más rápido y alegre]\r\nDamos un aplauso,\r\nescondo las manos,\r\nmuevo los deditos,\r\n¡saludan de lado!\r\nSuben a la nube,\r\nbajan con las gotas,\r\ncorren por el río,\r\n¡giran dando vueltas locas!\r\n\r\n[Verse 4 - Con mucha energía]\r\nDamos un aplauso,\r\nescondo las manos,\r\nbaila hoy Perlita,\r\n¡mueve los deditos de lado!\r\nSuben a la nube,\r\nbajan con las gotas,\r\ncorren por el río,\r\n¡giran dando vueltas locas!\r\n\r\n[Outro]\r\n¡Estiren los brazos, Perlita!\r\n¡Un salto bien alto y a congelarse ya!\r\n¡Chau, juego, chau!",
     "dedication": "",
     "accentColor": "#FF69B4"
   },
   {
     "id": "12",
     "title": "Mi Caballito",
-    "artist": "Artista",
+    "artist": "Serrat",
     "audioSrc": "/media/audio/Mi Caballito.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/Mi Caballito.jpg",
@@ -148,7 +148,7 @@ export const playlist: Song[] = [
   {
     "id": "13",
     "title": "Perlita Bailarina",
-    "artist": "Artista",
+    "artist": "Spinetta",
     "audioSrc": "/media/audio/Perlita Bailarina.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/Perlita Bailarina.jpg",
@@ -160,7 +160,7 @@ export const playlist: Song[] = [
   {
     "id": "14",
     "title": "Perlita Marchando",
-    "artist": "Artista",
+    "artist": "Charly García",
     "audioSrc": "/media/audio/Perlita Marchando.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/Perlita Marchando.jpg",
@@ -172,7 +172,7 @@ export const playlist: Song[] = [
   {
     "id": "15",
     "title": "Perlita hasta el final",
-    "artist": "Artista",
+    "artist": "John Lennon",
     "audioSrc": "/media/audio/Perlita hasta el final.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/Perlita hasta el final.jpg",
@@ -184,12 +184,12 @@ export const playlist: Song[] = [
   {
     "id": "16",
     "title": "Soy Grande",
-    "artist": "Artista",
+    "artist": "Mercedes Sosa",
     "audioSrc": "/media/audio/Soy Grande.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/Soy Grande.jpg",
     "duration": 108,
-    "lyrics": "Soy grande, soy gigante\nPuedo volar más alto que el sol\nSoy grande, soy valiente\nNada me puede hacer temblar\n\nCuando me miro al espejo\nVeo una estrella brillando\nCon fuerza y con alegría\nEl mundo lo puedo cambiar",
+    "lyrics": "La-lai-la, la-lai-la, la-la-la-la-la-lai-la\nLa-lai-la, la-lai-la, la-la-la-la-la-la\n\n[Verse 1 - Afirmaciones]\n¡Perlita es valiente, genial y muy brillante!\n¡Perlita es valiente, genial y muy brillante!\nYo puedo, lo intento y sé que soy valiosa,\nyo puedo, lo intento y la vida es hermosa.\n\n[Chorus - El abrazo]\nAsí es como soy, un abrazo me doy,\ncon mucha alegría caminando voy.\nAsí es como soy, un abrazo me doy,\n¡Perlita es feliz con el día de hoy!\n\n[Verse 2 - El corazón]\nAsí es como soy, un abrazo me doy,\ntengo un corazoncito que cuido a donde voy.\nCon Mami, con Papi y mis hermanos también,\ncrecemos juntitos y la pasamos muy bien.\n\n[Verse 3 - Repetición con fuerza]\n¡Soy fuerte, soy libre, me gusta aprender!\n¡Perlita es enorme y tiene gran poder!\nYo puedo, lo intento y sé que soy valiosa,\nyo puedo, lo intento y la vida es hermosa.\n\n[Outro]\nLa-lai-la, la-lai-la, la-la-la-la-la-lai-la\n¡Sí, sí, sí!\n¡Perlita lo va a lograr!",
     "dedication": "",
     "accentColor": "#E91E63"
   }

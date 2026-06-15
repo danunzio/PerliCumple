@@ -25,7 +25,31 @@ const initialState: PlayerState = {
   showLyrics: false,
   likedSongs: new Set(),
   showQueue: false,
+  completedSongs: new Set<string>(),
+  rewardShown: false,
+  showReward: false,
+  rewardPending: false,
 };
+
+const TOTAL_SONGS = 16;
+const SONG_THRESHOLD = 0.9;
+const TOTAL_THRESHOLD = 0.8;
+const MIN_COMPLETED = Math.ceil(TOTAL_SONGS * TOTAL_THRESHOLD); // 13
+
+function loadPersistedState(): Partial<PlayerState> {
+  try {
+    const completedRaw = localStorage.getItem("perli-completed");
+    const rewardShownRaw = localStorage.getItem("perli-reward-shown");
+    return {
+      completedSongs: completedRaw
+        ? new Set<string>(JSON.parse(completedRaw))
+        : new Set<string>(),
+      rewardShown: rewardShownRaw === "true",
+    };
+  } catch {
+    return {};
+  }
+}
 
 function getNextIndex(
   queueIndex: number,
@@ -74,13 +98,38 @@ function playerReducer(state: PlayerState, action: PlayerAction): PlayerState {
     }
     case "TOGGLE_PLAY":
       return { ...state, isPlaying: !state.isPlaying };
-    case "SET_PROGRESS":
-      return { ...state, currentTime: action.currentTime };
+    case "SET_PROGRESS": {
+      const update: Partial<PlayerState> = { currentTime: action.currentTime };
+
+      if (state.currentSong && state.duration > 0) {
+        const progress = action.currentTime / state.duration;
+        if (progress >= SONG_THRESHOLD && !state.completedSongs.has(state.currentSong.id)) {
+          const newCompleted = new Set(state.completedSongs);
+          newCompleted.add(state.currentSong.id);
+          update.completedSongs = newCompleted;
+
+          if (newCompleted.size >= MIN_COMPLETED && !state.rewardShown && !state.rewardPending) {
+            update.rewardPending = true;
+          }
+        }
+      }
+
+      return { ...state, ...update };
+    }
     case "SET_DURATION":
       return { ...state, duration: action.duration };
     case "SEEK":
       return { ...state, currentTime: action.time };
     case "NEXT": {
+      if (state.rewardPending) {
+        return {
+          ...state,
+          showReward: true,
+          isPlaying: false,
+          rewardPending: false,
+        };
+      }
+
       const nextIdx = getNextIndex(
         state.queueIndex,
         state.queue.length,
@@ -130,6 +179,8 @@ function playerReducer(state: PlayerState, action: PlayerAction): PlayerState {
     }
     case "DISMISS_SPLASH":
       return { ...state, showSplash: false };
+    case "DISMISS_REWARD":
+      return { ...state, showReward: false, rewardShown: true };
     case "TOGGLE_LYRICS":
       return { ...state, showLyrics: !state.showLyrics };
     case "TOGGLE_QUEUE":
@@ -162,7 +213,11 @@ interface PlayerContextType {
 const PlayerContext = createContext<PlayerContextType | null>(null);
 
 export function PlayerProvider({ children }: { children: ReactNode }) {
-  const [state, dispatch] = useReducer(playerReducer, initialState);
+  const [state, dispatch] = useReducer(
+    playerReducer,
+    initialState,
+    (initial) => ({ ...initial, ...loadPersistedState() })
+  );
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const playSong = useCallback(
@@ -243,6 +298,27 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state.currentTime, state.currentSong?.id]);
+
+  useEffect(() => {
+    try {
+      localStorage.setItem(
+        "perli-completed",
+        JSON.stringify([...state.completedSongs])
+      );
+    } catch {
+      /* localStorage not available */
+    }
+  }, [state.completedSongs]);
+
+  useEffect(() => {
+    if (state.rewardShown) {
+      try {
+        localStorage.setItem("perli-reward-shown", "true");
+      } catch {
+        /* localStorage not available */
+      }
+    }
+  }, [state.rewardShown]);
 
   return (
     <PlayerContext.Provider

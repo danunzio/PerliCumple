@@ -31,7 +31,7 @@ export default function SplashScreen() {
       <div className="relative z-10 w-full flex justify-center pb-16 px-6">
         <button
           onClick={() => dispatch({ type: "DISMISS_SPLASH" })}
-          className="bg-black/30 backdrop-blur-md text-white text-lg font-semibold py-4 px-14 rounded-full border border-white/20 shadow-[0_0_30px_rgba(255,255,255,0.1)] hover:bg-black/40 active:scale-95 hover:scale-105 transition-all duration-200 animate-fade-in-up"
+          className="bg-black/30 backdrop-blur-md text-white text-lg font-semibold py-4 px-14 rounded-full border border-white/20 shadow-[0_0_30px_rgba(255,255,255,0.1)] hover:bg-black/40 active:scale-95 hover:scale-105 transition-all duration-200 animate-fade-in-up animate-pulse-soft"
         >
           ¡Empezar!
         </button>

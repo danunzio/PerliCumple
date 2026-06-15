@@ -3,6 +3,7 @@
 import { useParams, useRouter } from "next/navigation";
 import { playlist } from "@/data/playlist";
 import { usePlayer } from "@/context/PlayerContext";
+import { useSecretPhotos } from "@/hooks/useSecretPhotos";
 import ProgressBar from "@/components/ProgressBar";
 import PlayerControls from "@/components/PlayerControls";
 import LyricsView from "@/components/LyricsView";
@@ -23,6 +24,7 @@ export default function NowPlayingPage() {
 
   const accentColor = song.accentColor || "#FF69B4";
   const isLiked = state.likedSongs.has(song.id);
+  const { currentSecret, reveal } = useSecretPhotos(song.id);
 
   if (state.showLyrics) {
     return (
@@ -69,9 +71,10 @@ export default function NowPlayingPage() {
       </div>
 
       <div key={song.id} className="flex-1 flex flex-col items-center justify-center px-6">
-        <div 
-          className={`w-full max-w-sm aspect-square rounded-2xl overflow-hidden mb-8 transition-all duration-700 ease-out ${
-            state.isPlaying ? "animate-float-cover" : "scale-100 animate-fade-in-scale"
+        <div
+          onClick={reveal}
+          className={`w-full max-w-sm aspect-square rounded-2xl overflow-hidden mb-8 transition-all duration-700 ease-out cursor-pointer active:scale-[0.97] ${
+            state.isPlaying && !currentSecret ? "animate-float-cover" : ""
           }`}
           style={{
             boxShadow: state.isPlaying 
@@ -79,13 +82,22 @@ export default function NowPlayingPage() {
               : `0 10px 30px -10px rgba(0,0,0,0.8)`
           }}
         >
-          <img
-            src={song.coverSrc}
-            alt={song.title}
-            className={`w-full h-full object-cover transition-transform duration-[2000ms] ease-out ${
-              state.isPlaying ? "scale-110" : "scale-100"
-            }`}
-          />
+          <div className="relative w-full h-full">
+            <img
+              src={song.coverSrc}
+              alt={song.title}
+              className={`absolute inset-0 w-full h-full object-cover transition-all duration-500 ease-out ${
+                currentSecret ? "opacity-0 scale-95" : "opacity-100"
+              } ${state.isPlaying && !currentSecret ? "scale-110" : "scale-100"}`}
+            />
+            {currentSecret && (
+              <img
+                src={currentSecret}
+                alt="Secreto"
+                className="absolute inset-0 w-full h-full object-cover animate-fade-in-scale"
+              />
+            )}
+          </div>
         </div>
 
         <div className="text-center w-full max-w-sm mb-6 animate-fade-in-up animate-stagger-2">

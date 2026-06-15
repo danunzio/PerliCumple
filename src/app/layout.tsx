@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { PlayerProvider } from "@/context/PlayerContext";
 import SplashScreen from "@/components/SplashScreen";
+import RewardModal from "@/components/RewardModal";
 
 export const metadata: Metadata = {
   title: "Feliz Cumple Perlita 🎉",
@@ -41,6 +42,7 @@ export default function RootLayout({
       <body className="bg-surface text-white antialiased">
         <PlayerProvider>
           <SplashScreen />
+          <RewardModal />
           {children}
         </PlayerProvider>
       </body>
