@@ -140,9 +140,9 @@ export default function NowPlayingPage() {
           <div className="flex justify-center animate-fade-in-up animate-stagger-4">
             <button
               onClick={() => dispatch({ type: "TOGGLE_LYRICS" })}
-              className="flex items-center gap-2 text-xs text-white/60 hover:text-white active:scale-95 transition-all duration-150 p-3"
+              className="flex items-center gap-2 text-sm text-white/60 hover:text-white active:scale-95 transition-all duration-150 p-3"
             >
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M8.5 14.5L4 19l1.5 1.5L9 17h2l-2.5-2.5zM15 1c-1.1 0-2 .9-2 2v13.5c0 1.1.9 2 2 2s2-.9 2-2V3c0-1.1-.9-2-2-2zm6 2h-2v13.5c0 1.1.9 2 2 2s2-.9 2-2V3c0-1.1-.9-2-2-2zm-9.09 5.64C10.25 6.09 7.83 5 5 5 3.58 5 2.23 5.27 1 5.75v15.42C2.23 20.23 3.58 20 5 20c2.83 0 5.25 1.09 6.91 2.36.46.36 1.09.09 1.09-.55V7.19c0-.45-.35-.81-.79-.55z" />
               </svg>
               Ver letra

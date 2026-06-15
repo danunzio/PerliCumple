@@ -248,7 +248,11 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     if (!audio || !state.currentSong) return;
 
     if (state.isPlaying) {
-      audio.play().catch(() => {});
+      audio.play().catch(() => {
+        audio.addEventListener("canplay", () => {
+          audio.play().catch(() => {});
+        }, { once: true });
+      });
     } else {
       audio.pause();
     }
@@ -326,11 +330,12 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     >
       {children}
       {state.currentSong && (
-        <audio
-          ref={audioRef}
-          src={state.currentSong.audioSrc}
-          preload="auto"
-        />
+          <audio
+            key={state.currentSong.id}
+            ref={audioRef}
+            src={state.currentSong.audioSrc}
+            preload="auto"
+          />
       )}
     </PlayerContext.Provider>
   );
