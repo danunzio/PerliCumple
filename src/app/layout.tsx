@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     "Para celebrar los 3 años de Perlita. Hecho con mucho amor.",
   openGraph: {
     title: "Feliz Cumple Perlita 🎉",
-    description: "Para celebrar los 3 años de Perlita. Hecho con mucho amor.",
+    description: "Para celebrar los 3 años de Perlita!. Hecho con mucho amor!.",
     url: "https://perli-cumple.vercel.app",
     siteName: "Perli Cumple",
     images: [
