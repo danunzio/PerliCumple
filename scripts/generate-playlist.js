@@ -20,6 +20,18 @@ const AUDIO_EXTS = [".mp3", ".wav", ".ogg", ".m4a", ".aac", ".flac"];
 const IMAGE_EXTS = [".jpg", ".jpeg", ".png", ".svg", ".webp"];
 const GIF_EXTS = [".gif"];
 
+function loadExistingArtists() {
+  try {
+    if (!fs.existsSync(OUTPUT)) return [];
+    const content = fs.readFileSync(OUTPUT, "utf-8");
+    const matches = content.match(/"artist":\s*"([^"]+)"/g);
+    if (!matches) return [];
+    return matches.map((m) => m.replace(/"artist":\s*"([^"]+)"/, "$1"));
+  } catch {
+    return [];
+  }
+}
+
 function getBaseName(filename) {
   return path.parse(filename).name;
 }
@@ -142,6 +154,7 @@ async function generate() {
   }
 
   const songs = [];
+  const existingArtists = loadExistingArtists();
 
   for (let idx = 0; idx < audioFiles.length; idx++) {
     const file = audioFiles[idx];
@@ -149,6 +162,7 @@ async function generate() {
     const id = String(idx + 1).padStart(2, "0");
     const title = formatTitle(baseName);
     const accentColor = getAccentColor(baseName, idx);
+    const artist = existingArtists[idx] || "Artista";
 
     console.log(`\nProcessing: ${file}`);
 
@@ -191,7 +205,7 @@ async function generate() {
     songs.push({
       id,
       title,
-      artist: "Artista",
+      artist,
       audioSrc: `/media/audio/${file}`,
       coverType: cover.type,
       coverSrc: cover.src,

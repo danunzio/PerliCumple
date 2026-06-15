@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import { usePortfolio } from "@/hooks/usePortfolio";
+import { usePlayer } from "@/context/PlayerContext";
 
 function playOpenSound() {
   try {
@@ -25,6 +26,7 @@ function playOpenSound() {
 
 export default function PortfolioPage() {
   const router = useRouter();
+  const { state } = usePlayer();
   const {
     photos,
     shuffledOrder,
@@ -39,6 +41,7 @@ export default function PortfolioPage() {
     totalPhotos,
   } = usePortfolio();
 
+  const [showNoMusicMsg, setShowNoMusicMsg] = useState(false);
   const [selectedPhoto, setSelectedPhoto] = useState<string | null>(null);
   const [selectedOriginalIndex, setSelectedOriginalIndex] = useState<number | null>(null);
   const [canClose, setCanClose] = useState(false);
@@ -47,6 +50,12 @@ export default function PortfolioPage() {
 
   const handlePhotoClick = useCallback(
     (originalIndex: number) => {
+      if (!state.isPlaying) {
+        setShowNoMusicMsg(true);
+        setTimeout(() => setShowNoMusicMsg(false), 2000);
+        return;
+      }
+
       if (isUnlocked(originalIndex)) {
         setSelectedPhoto(photos[originalIndex]);
         setSelectedOriginalIndex(originalIndex);
@@ -65,7 +74,7 @@ export default function PortfolioPage() {
         playOpenSound();
       }
     },
-    [isUnlocked, tryUnlock, photos]
+    [isUnlocked, tryUnlock, photos, state.isPlaying]
   );
 
   useEffect(() => {
@@ -136,6 +145,14 @@ export default function PortfolioPage() {
           />
         </div>
       </div>
+
+      {showNoMusicMsg && (
+        <div className="px-4 pb-3 animate-fade-in">
+          <div className="bg-black/60 backdrop-blur-sm rounded-xl px-4 py-3 text-center">
+            <p className="text-white font-semibold text-sm">Acá falta música!!!</p>
+          </div>
+        </div>
+      )}
 
       <main className="px-2 pb-[max(2rem,env(safe-area-inset-bottom))]">
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">

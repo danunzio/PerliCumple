@@ -3,7 +3,7 @@
 ## [Unreleased]
 
 ### Agregado
-- **Artistas en canciones**: Se asignaron artistas a las 16 canciones de la playlist. Distribución: Tio Mati (5), Spinetta (2), Serrat (2), John Lennon (2), Charly García (2), Mercedes Sosa (2), Bob Marley (1).
+- **Artistas en canciones**: Se asignaron artistas a las 16 canciones de la playlist. Distribución: Tio Mati (5), Spinetta (2), Joan Manuel Serrat (2), John Lennon (2), Charly García (2), Mercedes Sosa (2), Bob Marley (1).
 - **CHANGELOG.md**: Archivo de registro de cambios.
 
 ### Cambiado
@@ -18,3 +18,7 @@
 
 ### Corregido
 - **Error de React Hooks en build**: El `useState` de `showNoMusicMsg` estaba después de un early return (`if (!song)`), lo que violaba las Rules of Hooks. Se movió antes del early return para que se llame en el mismo orden siempre (`src/app/player/[id]/page.tsx`).
+- **Artistas no se mostraban**: Las asignaciones de artistas a las canciones se habían perdido (nunca se commitearon). Se re-asignaron los nombres reales a las 16 canciones: Tio Mati (5), Spinetta (2), Joan Manuel Serrat (2), John Lennon (2), Charly García (2), Mercedes Sosa (2), Bob Marley (1) (`src/data/playlist.ts`).
+- **Guard "Acá falta música!!!" en portfolio**: El portfolio de fotos no verificaba si había música sonando para permitir desbloquear fotos. Se agregó la misma guardia que en el reproductor: si no hay música, muestra un mensaje "Acá falta música!!!" y bloquea el desbloqueo (`src/app/portfolio/page.tsx:53-57, 148-154`).
+- **Fotos secretas con paths inválidos**: El archivo `secretPhotos.ts` contenía paths que no existen en disco (ej: `9.31.07 AM (2).jpeg`), causando que a veces la imagen no cargara y se mostrara rota. Se actualizaron los 13 paths correctos que existen en la carpeta `Secretos` (`src/data/secretPhotos.ts`).
+- **generate-playlist.js sobreescribía artistas**: El script de prebuild hardcodeaba `artist: "Artista"` y regeneraba todo el `playlist.ts`, borrando cualquier asignación manual. Se agregó `loadExistingArtists()` que lee los artistas del archivo existente y los preserva en cada regeneración (`scripts/generate-playlist.js`).

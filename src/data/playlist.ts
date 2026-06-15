@@ -4,7 +4,7 @@ export const playlist: Song[] = [
   {
     "id": "01",
     "title": "A guardar",
-    "artist": "Artista",
+    "artist": "Tio Mati",
     "audioSrc": "/media/audio/A guardar.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/A guardar.jpg",
@@ -16,7 +16,7 @@ export const playlist: Song[] = [
   {
     "id": "02",
     "title": "A jugar, a jugar!!!",
-    "artist": "Artista",
+    "artist": "Tio Mati",
     "audioSrc": "/media/audio/A jugar, a jugar!!!.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/A jugar, a jugar!!!.jpg",
@@ -28,7 +28,7 @@ export const playlist: Song[] = [
   {
     "id": "03",
     "title": "Abro y Cierro Al Salir de la Cueva",
-    "artist": "Artista",
+    "artist": "Tio Mati",
     "audioSrc": "/media/audio/Abro y Cierro - Al Salir de la Cueva.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/Abro y Cierro - Al Salir de la Cueva.jpg",
@@ -40,7 +40,7 @@ export const playlist: Song[] = [
   {
     "id": "04",
     "title": "Abuelitos lindos",
-    "artist": "Artista",
+    "artist": "Mercedes Sosa",
     "audioSrc": "/media/audio/Abuelitos lindos.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/Abuelitos lindos.jpg",
@@ -52,7 +52,7 @@ export const playlist: Song[] = [
   {
     "id": "05",
     "title": "Abus Rodi y Eli",
-    "artist": "Artista",
+    "artist": "Mercedes Sosa",
     "audioSrc": "/media/audio/Abus Rodi y Eli.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/Abus Rodi y Eli.jpg",
@@ -64,7 +64,7 @@ export const playlist: Song[] = [
   {
     "id": "06",
     "title": "En la selva de Perlita",
-    "artist": "Artista",
+    "artist": "Tio Mati",
     "audioSrc": "/media/audio/En la selva de Perlita.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/En la selva de Perlita.jpg",
@@ -76,7 +76,7 @@ export const playlist: Song[] = [
   {
     "id": "07",
     "title": "Facu y Abril",
-    "artist": "Artista",
+    "artist": "Tio Mati",
     "audioSrc": "/media/audio/Facu y Abril.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/Facu y Abril.jpg",
@@ -88,7 +88,7 @@ export const playlist: Song[] = [
   {
     "id": "08",
     "title": "Familia Rock",
-    "artist": "Artista",
+    "artist": "Charly García",
     "audioSrc": "/media/audio/Familia Rock.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/Familia Rock.jpg",
@@ -100,7 +100,7 @@ export const playlist: Song[] = [
   {
     "id": "09",
     "title": "Feliz Cumple",
-    "artist": "Artista",
+    "artist": "John Lennon",
     "audioSrc": "/media/audio/Feliz Cumple.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/Feliz Cumple.jpg",
@@ -112,7 +112,7 @@ export const playlist: Song[] = [
   {
     "id": "10",
     "title": "Hermanos Queridos",
-    "artist": "Artista",
+    "artist": "Joan Manuel Serrat",
     "audioSrc": "/media/audio/Hermanos Queridos.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/Hermanos Queridos.jpg",
@@ -124,7 +124,7 @@ export const playlist: Song[] = [
   {
     "id": "11",
     "title": "Juego de manos",
-    "artist": "Artista",
+    "artist": "Bob Marley",
     "audioSrc": "/media/audio/Juego de manos.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/Juego de manos.jpg",
@@ -136,7 +136,7 @@ export const playlist: Song[] = [
   {
     "id": "12",
     "title": "Mi Caballito",
-    "artist": "Artista",
+    "artist": "Spinetta",
     "audioSrc": "/media/audio/Mi Caballito.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/Mi Caballito.jpg",
@@ -148,7 +148,7 @@ export const playlist: Song[] = [
   {
     "id": "13",
     "title": "Perlita Bailarina",
-    "artist": "Artista",
+    "artist": "Joan Manuel Serrat",
     "audioSrc": "/media/audio/Perlita Bailarina.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/Perlita Bailarina.jpg",
@@ -160,7 +160,7 @@ export const playlist: Song[] = [
   {
     "id": "14",
     "title": "Perlita Marchando",
-    "artist": "Artista",
+    "artist": "Spinetta",
     "audioSrc": "/media/audio/Perlita Marchando.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/Perlita Marchando.jpg",
@@ -172,7 +172,7 @@ export const playlist: Song[] = [
   {
     "id": "15",
     "title": "Perlita hasta el final",
-    "artist": "Artista",
+    "artist": "Charly García",
     "audioSrc": "/media/audio/Perlita hasta el final.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/Perlita hasta el final.jpg",
@@ -184,7 +184,7 @@ export const playlist: Song[] = [
   {
     "id": "16",
     "title": "Soy Grande",
-    "artist": "Artista",
+    "artist": "John Lennon",
     "audioSrc": "/media/audio/Soy Grande.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/Soy Grande.jpg",

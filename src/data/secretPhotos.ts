@@ -1,10 +1,15 @@
 export const secretPhotos: string[] = [
   "/media/fotos/Secretos/WhatsApp Image 2026-06-15 at 9.31.07 AM.jpeg",
-  "/media/fotos/Secretos/WhatsApp Image 2026-06-15 at 9.31.07 AM (1).jpeg",
-  "/media/fotos/Secretos/WhatsApp Image 2026-06-15 at 9.31.07 AM (2).jpeg",
   "/media/fotos/Secretos/WhatsApp Image 2026-06-15 at 9.31.07 AM (3).jpeg",
   "/media/fotos/Secretos/WhatsApp Image 2026-06-15 at 9.31.08 AM (1).jpeg",
   "/media/fotos/Secretos/WhatsApp Image 2026-06-15 at 9.31.09 AM (1).jpeg",
   "/media/fotos/Secretos/WhatsApp Image 2026-06-15 at 9.31.10 AM.jpeg",
   "/media/fotos/Secretos/WhatsApp Image 2026-06-15 at 9.31.10 AM (2).jpeg",
+  "/media/fotos/Secretos/WhatsApp Image 2026-06-15 at 10.03.35 AM (2).jpeg",
+  "/media/fotos/Secretos/WhatsApp Image 2026-06-15 at 10.03.35 AM (3).jpeg",
+  "/media/fotos/Secretos/WhatsApp Image 2026-06-15 at 10.03.36 AM (2).jpeg",
+  "/media/fotos/Secretos/WhatsApp Image 2026-06-15 at 10.03.36 AM (3).jpeg",
+  "/media/fotos/Secretos/WhatsApp Image 2026-06-15 at 10.03.37 AM.jpeg",
+  "/media/fotos/Secretos/WhatsApp Image 2026-06-15 at 10.03.37 AM (1).jpeg",
+  "/media/fotos/Secretos/WhatsApp Image 2026-06-15 at 10.03.37 AM (2).jpeg",
 ];
