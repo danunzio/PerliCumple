@@ -16,6 +16,7 @@ export default function NowPlayingPage() {
 
   const song = state.currentSong || playlist.find((s) => s.id === params.id);
   const { currentSecret, reveal } = useSecretPhotos(song?.id ?? "");
+  const [showNoMusicMsg, setShowNoMusicMsg] = useState(false);
 
   if (!song) {
     return (
@@ -27,7 +28,6 @@ export default function NowPlayingPage() {
 
   const accentColor = song.accentColor || "#FF69B4";
   const isLiked = state.likedSongs.has(song.id);
-  const [showNoMusicMsg, setShowNoMusicMsg] = useState(false);
 
   const handleCoverTap = () => {
     if (currentSecret) return;

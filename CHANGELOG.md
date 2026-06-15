@@ -15,3 +15,6 @@
 - **Fix flash de contenido antes del splash**: Se creó `SplashGuard` para ocultar los children con `opacity-0` mientras el splash está activo, evitando que se vea la playlist antes de que aparezca la pantalla de bienvenida (`src/components/SplashGuard.tsx`, `src/app/layout.tsx`).
 - **Fotos Secretas: guardia de música**: Los taps sobre el cover solo activan fotos secretas si la canción está sonando. Si no hay música, aparece un overlay breve con el mensaje "Acá falta música!!!" durante 2 segundos (`src/app/player/[id]/page.tsx:32-40, 113-116`).
 - **Fotos Secretas (Easter Egg)**: Al hacer tap 5 veces sobre el cover grande en la pantalla del reproductor, aparece una foto sorpresa de la carpeta `Secretos` con un magic chime generado por Web Audio API. La foto dura 5 segundos con una transición suave (crossfade) y luego vuelve el cover original. Las fotos no se repiten hasta agotar las 8, y luego el ciclo se reinicia. Si se cambia de canción, el contador de taps se resetea (`src/hooks/useSecretPhotos.ts`, `src/data/secretPhotos.ts`, `src/app/player/[id]/page.tsx:73-101`).
+
+### Corregido
+- **Error de React Hooks en build**: El `useState` de `showNoMusicMsg` estaba después de un early return (`if (!song)`), lo que violaba las Rules of Hooks. Se movió antes del early return para que se llame en el mismo orden siempre (`src/app/player/[id]/page.tsx`).
