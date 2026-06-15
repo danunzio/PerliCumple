@@ -2,15 +2,16 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { PlayerProvider } from "@/context/PlayerContext";
 import SplashScreen from "@/components/SplashScreen";
+import SplashGuard from "@/components/SplashGuard";
 import RewardModal from "@/components/RewardModal";
 
 export const metadata: Metadata = {
   title: "Feliz Cumple Perlita 🎉",
   description:
-    "Playlist especial para celebrar los 3 años de Perlita. Hecho con mucho amor.",
+    "Para celebrar los 3 años de Perlita. Hecho con mucho amor.",
   openGraph: {
     title: "Feliz Cumple Perlita 🎉",
-    description: "Playlist especial para celebrar los 3 años de Perlita. Hecho con mucho amor.",
+    description: "Para celebrar los 3 años de Perlita. Hecho con mucho amor.",
     url: "https://perli-cumple.vercel.app",
     siteName: "Perli Cumple",
     images: [
@@ -43,7 +44,9 @@ export default function RootLayout({
         <PlayerProvider>
           <SplashScreen />
           <RewardModal />
-          {children}
+          <SplashGuard>
+            {children}
+          </SplashGuard>
         </PlayerProvider>
       </body>
     </html>

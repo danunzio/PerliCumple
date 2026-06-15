@@ -5,7 +5,7 @@ import { secretPhotos } from "@/data/secretPhotos";
 
 export function useSecretPhotos(songId: string) {
   const [currentSecret, setCurrentSecret] = useState<string | null>(null);
-  const [tapCount, setTapCount] = useState(0);
+  const tapCountRef = useRef(0);
   const shownRef = useRef<Set<number>>(new Set());
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const prevSongIdRef = useRef(songId);
@@ -38,14 +38,13 @@ export function useSecretPhotos(songId: string) {
   const reveal = useCallback(() => {
     if (currentSecret) return;
 
-    const newCount = tapCount + 1;
+    tapCountRef.current += 1;
 
-    if (newCount < TAPS_NEEDED) {
-      setTapCount(newCount);
+    if (tapCountRef.current < TAPS_NEEDED) {
       return;
     }
 
-    setTapCount(0);
+    tapCountRef.current = 0;
 
     const available = secretPhotos
       .map((_, i) => i)
@@ -67,11 +66,11 @@ export function useSecretPhotos(songId: string) {
     timerRef.current = setTimeout(() => {
       setCurrentSecret(null);
     }, 5000);
-  }, [currentSecret, tapCount, playSecretSound]);
+  }, [currentSecret, playSecretSound]);
 
   useEffect(() => {
     if (prevSongIdRef.current !== songId) {
-      setTapCount(0);
+      tapCountRef.current = 0;
       prevSongIdRef.current = songId;
     }
   }, [songId]);
@@ -82,5 +81,5 @@ export function useSecretPhotos(songId: string) {
     };
   }, []);
 
-  return { currentSecret, tapCount, reveal };
+  return { currentSecret, reveal };
 }

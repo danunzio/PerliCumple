@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { playlist } from "@/data/playlist";
 import { usePlayer } from "@/context/PlayerContext";
@@ -26,6 +27,17 @@ export default function NowPlayingPage() {
 
   const accentColor = song.accentColor || "#FF69B4";
   const isLiked = state.likedSongs.has(song.id);
+  const [showNoMusicMsg, setShowNoMusicMsg] = useState(false);
+
+  const handleCoverTap = () => {
+    if (currentSecret) return;
+    if (!state.isPlaying) {
+      setShowNoMusicMsg(true);
+      setTimeout(() => setShowNoMusicMsg(false), 2000);
+      return;
+    }
+    reveal();
+  };
 
   if (state.showLyrics) {
     return (
@@ -73,7 +85,7 @@ export default function NowPlayingPage() {
 
       <div key={song.id} className="flex-1 flex flex-col items-center justify-center px-6">
         <div
-          onClick={reveal}
+          onClick={handleCoverTap}
           className={`w-full max-w-sm aspect-square rounded-2xl overflow-hidden mb-8 transition-all duration-700 ease-out cursor-pointer active:scale-[0.97] ${
             state.isPlaying && !currentSecret ? "animate-float-cover" : ""
           }`}
@@ -97,6 +109,11 @@ export default function NowPlayingPage() {
                 alt="Secreto"
                 className="absolute inset-0 w-full h-full object-cover animate-fade-in-scale"
               />
+            )}
+            {showNoMusicMsg && (
+              <div className="absolute inset-0 flex items-center justify-center bg-black/50 backdrop-blur-sm animate-fade-in z-10">
+                <p className="text-white font-semibold text-lg drop-shadow-lg">Acá falta música!!!</p>
+              </div>
             )}
           </div>
         </div>
