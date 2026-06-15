@@ -303,7 +303,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     try {
       localStorage.setItem(
         "perli-completed",
-        JSON.stringify([...state.completedSongs])
+        JSON.stringify(Array.from(state.completedSongs))
       );
     } catch {
       /* localStorage not available */

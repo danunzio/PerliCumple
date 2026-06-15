@@ -14,6 +14,8 @@ export default function NowPlayingPage() {
   const { state, dispatch } = usePlayer();
 
   const song = state.currentSong || playlist.find((s) => s.id === params.id);
+  const { currentSecret, reveal } = useSecretPhotos(song?.id ?? "");
+
   if (!song) {
     return (
       <div className="min-h-[100dvh] bg-surface flex items-center justify-center">
@@ -24,7 +26,6 @@ export default function NowPlayingPage() {
 
   const accentColor = song.accentColor || "#FF69B4";
   const isLiked = state.likedSongs.has(song.id);
-  const { currentSecret, reveal } = useSecretPhotos(song.id);
 
   if (state.showLyrics) {
     return (
