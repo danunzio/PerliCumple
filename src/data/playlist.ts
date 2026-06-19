@@ -63,6 +63,18 @@ export const playlist: Song[] = [
   },
   {
     "id": "06",
+    "title": "El Gol de Perlita",
+    "artist": "Tio Mati",
+    "audioSrc": "/media/audio/El Gol de Perlita.mp3",
+    "coverType": "image",
+    "coverSrc": "/media/covers/El Gol de Perlita.jpg",
+    "duration": 82,
+    "lyrics": "[Intro - Trompetas y palmas]\r\n¡Vamos, vamos Argentina!\r\n¡Saltando con Perlita!\r\n\r\n[Verse 1]\r\nMami Vicki y Papi Fede \r\nlistos para jugar.\r\n¡Con Perlita en la cancha \r\nvamos a saltar!\r\n\r\n[Chorus]\r\n¡Messi, Messi, Messi, \r\nmira el gol que hizo hoy!\r\n¡Perlita con Iña y Titi \r\ngritan: \"¡Gol, gol, gol!\"!\r\n\r\n[Verse 2]\r\nTodos de la mano \r\nsaltan un montón.\r\n¡Con esta familia hermosa \r\nsalimos campeón!\r\n\r\n[Chorus]\r\n¡Messi, Messi, Messi, \r\nmira el gol que hizo hoy!\r\n¡Perlita con Iña y Titi \r\ngritan: \"¡Gol, gol, gol!\"!\r\n\r\n[Outro]\r\n¡Gol de Perlita!\r\n¡Argentina, Argentina!\r\n¡Iña, Titi, Mami y Papi... ¡Sí!\r\n[Fin alegre con silbato de cancha y risas]",
+    "dedication": "",
+    "accentColor": "#E91E63"
+  },
+  {
+    "id": "07",
     "title": "En la selva de Perlita",
     "artist": "Tio Mati",
     "audioSrc": "/media/audio/En la selva de Perlita.mp3",
@@ -71,126 +83,138 @@ export const playlist: Song[] = [
     "duration": 105,
     "lyrics": "[Verse 1]\r\nEn la selva de Perlita hay un gran león,\r\nque ruge fuerte y mueve el mentón (¡Grrr!).\r\nY arriba en la rama, un mono trepador,\r\nsalta que te salta bajo el calor.\r\n\r\n[Chorus]\r\n¡Vamos a la selva a caminar!\r\n¡Vamos con Perlita a disfrutar!\r\nLos animales queremos conocer,\r\ncon ritmos alegres otra vez.\r\n\r\n[Verse 2]\r\nUn elefante elegante marcha de prisa,\r\nda una vuelta entera y nos da risa.\r\nY en la laguna, nadando un montón,\r\n¡un cocodrilo que es un juguetón!\r\n\r\n[Chorus]\r\n¡Vamos a la selva a caminar!\r\n¡Vamos con Perlita a disfrutar!\r\nLos animales queremos conocer,\r\ncon ritmos alegres otra vez.\r\n\r\n[Outro]\r\nEl león y el mono saludan al fin,\r\ny el elefante baila en el jardín.\r\n¡Chau, chau, animales, nos vemos después!\r\nPerlita saluda con un \"uno, dos, tres\".",
     "dedication": "",
-    "accentColor": "#E91E63"
+    "accentColor": "#FF5722"
   },
   {
-    "id": "07",
+    "id": "08",
     "title": "Facu y Abril",
-    "artist": "Tio Mati",
+    "artist": "Charly García",
     "audioSrc": "/media/audio/Facu y Abril.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/Facu y Abril.jpg",
     "duration": 83,
     "lyrics": "[Verse 1 - Entrada alegre con guitarra y palmas]\r\n¡Ahí viene Facundo, ahí viene Facundo!\r\n¡Volvió de viaje, recorrió todo el mundo!\r\nLlegó de Estados Unidos para acá,\r\ny con Perlita se pone a jugar.\r\n¡Y hace \"¡Hola!\"!\r\n\r\n[Verse 2 - El turno de Abril]\r\n¡Ahí viene Abril, ahí viene Abril!\r\n¡Arma las cajas, se muda feliz!\r\nTiene camiones y cajas un montón,\r\ny con Perlita arman la diversión.\r\n¡Y hace \"¡Upa!\"!\r\n\r\n[Verse 3 - Repetición para bailar]\r\n¡Ahí viene Facundo, ahí viene Facundo!\r\n¡Trajo juguetes de todo el mundo!\r\nLlegó de Estados Unidos para acá,\r\ny con Perlita se pone a jugar.\r\n¡Y hace \"¡Hola!\"!\r\n\r\n[Verse 4 - Final de la mudanza]\r\n¡Ahí viene Abril, ahí viene Abril!\r\n¡Arma las cajas, se muda feliz!\r\nTiene camiones y cajas un montón,\r\ny con Perlita arman la diversión.\r\n¡Y hace \"¡Upa!\"!\r\n\r\n[Outro]\r\nFacu ya volvió, Abril se mudó,\r\n¡y con Perlita la fiesta empezó!\r\n¡Uno, dos, tres, a jugar otra vez!\r\n[Fin alegre con rasgueo de guitarra y risas de Perlita]",
     "dedication": "",
-    "accentColor": "#FF5722"
+    "accentColor": "#00BCD4"
   },
   {
-    "id": "08",
+    "id": "09",
     "title": "Familia Rock",
-    "artist": "Charly García",
+    "artist": "John Lennon",
     "audioSrc": "/media/audio/Familia Rock.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/Familia Rock.jpg",
     "duration": 137,
     "lyrics": "[Verse 1 - Entra la voz con fuerza sobre el bajo]\r\nMiren qué familia hermosa que tengo yo,\r\ncon Mami Vicki y Papi Fede se armó el rock.\r\nMe cuidan y me abrazan con un gran amor,\r\n¡en esta casa nunca falta la diversión!\r\n\r\n[Pre-Chorus - Sube la batería con aplausos]\r\n¡Viene Iña, viene Titi, listos para saltar!\r\n¡Con Perlita nadie nos va a parar!\r\n\r\n[Chorus - Estallido de guitarras y toda la banda, cantando el riff]\r\n¡OH-OH-OH-OH-OH-OHHH-OH!\r\n¡Qué hermosa familia tengo yo!\r\n¡OH-OH-OH-OH-OH-OHHH-OH!\r\n¡El equipo de amor ya ganó!\r\n\r\n[Verse 2 - Mismo ritmo pesado e intenso]\r\nJugamos en el cuarto, cantamos a viva voz,\r\nIña corre al frente, Titi cuida a los dos.\r\nMami y Papi saltan, nos miran con emoción,\r\n¡esta hermosa familia es la mejor de la región!\r\n\r\n[Pre-Chorus - Ritmo creciente]\r\n¡Viene Iña, viene Titi, listos para saltar!\r\n¡Con Perlita nadie nos va a parar!\r\n\r\n[Chorus - Estallido final]\r\n¡OH-OH-OH-OH-OH-OHHH-OH!\r\n¡Qué hermosa familia tengo yo!\r\n¡OH-OH-OH-OH-OH-OHHH-OH!\r\n¡El equipo de amor ya ganó!\r\n\r\n[Outro - Solo de bajo final bajando la intensidad]\r\nQué familia hermosa... sí señor.\r\nPerlita, Iña y Titi... puro rock.",
     "dedication": "",
-    "accentColor": "#00BCD4"
+    "accentColor": "#FFC107"
   },
   {
-    "id": "09",
+    "id": "10",
     "title": "Feliz Cumple",
-    "artist": "John Lennon",
+    "artist": "Joan Manuel Serrat",
     "audioSrc": "/media/audio/Feliz Cumple.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/Feliz Cumple.jpg",
     "duration": 58,
     "lyrics": "[Verse 1]\r\n(En español - Ritmo de marcha infantil)\r\nQue los cumplas feliz,\r\nque los cumplas feliz,\r\nque los cumplas Perlita,\r\nque los cumplas feliz.\r\n\r\n[Verse 2]\r\n(En español - Introducción hablada con música de fondo)\r\n¡Y ahora lo cantamos en italiano!\r\n\r\n[Verse 3]\r\n(En italiano - El ritmo cambia a un vals italiano saltarín)\r\nTanti auguri a te,\r\ntanti auguri a te,\r\ntanti auguri a Perlita,\r\ntanti auguri a te.\r\n\r\n[Verse 4]\r\n(En español - Introducción hablada con música de fondo)\r\n¡Y ahora lo cantamos en chino!\r\n\r\n[Verse 5]\r\n(En chino - El ritmo se vuelve festivo con palmas)\r\nZhu ni sheng ri kuai le,\r\nZhu ni sheng ri kuai le,\r\nZhu ni sheng ri kuai le, Perlita,\r\nZhu ni sheng ri kuai le.\r\n\r\n[Outro]\r\n(En español)\r\n¡Feliz cumpleaños, Perlita!\r\n¡Uno, dos y tres!",
     "dedication": "",
-    "accentColor": "#FFC107"
+    "accentColor": "#FF9800"
   },
   {
-    "id": "10",
+    "id": "11",
     "title": "Hermanos Queridos",
-    "artist": "Joan Manuel Serrat",
+    "artist": "Bob Marley",
     "audioSrc": "/media/audio/Hermanos Queridos.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/Hermanos Queridos.jpg",
     "duration": 110,
     "lyrics": "[Verse 1]\r\nEn la casa hay risas y mucho color,\r\ndos grandes hermanos que dan mucho amor.\r\nIña y Titi corren por todo el jardín,\r\nbuscando a Perlita para hacerla feliz.\r\n\r\n[Chorus]\r\nHermanos queridos, ¡vamos a jugar!\r\nCon saltos y risas, una vuelta dar.\r\nIña y Titi cuidan a su hermanita menor,\r\ny los tres juntitos cantan con amor.\r\n\r\n[Verse 2]\r\nArman una torre que llega hasta el sol,\r\no esconden juguetes bajo el sillón.\r\nIña le convida un dulce pastel,\r\ny Titi la invita a pintar un papel.\r\n\r\n[Chorus]\r\nHermanos queridos, ¡vamos a jugar!\r\nCon saltos y risas, una vuelta dar.\r\nIña y Titi cuidan a su hermanita menor,\r\ny los tres juntitos cantan con amor.\r\n\r\n[Outro]\r\nUn abrazo grande de oso polar,\r\nestos tres hermanos se van a dar.\r\n¡Chau, chau, hermanitos, qué lindo es jugar!\r\nPerlita un besito les va a regalar.",
     "dedication": "",
-    "accentColor": "#FF9800"
+    "accentColor": "#FF69B4"
   },
   {
-    "id": "11",
+    "id": "12",
     "title": "Juego de manos",
-    "artist": "Bob Marley",
+    "artist": "Spinetta",
     "audioSrc": "/media/audio/Juego de manos.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/Juego de manos.jpg",
     "duration": 138,
     "lyrics": "Damos un aplauso,\r\nescondo las manos,\r\nmuevo los deditos,\r\n¡saludan de lado!\r\nSuben a la nube,\r\nbajan con las gotas,\r\ncorren por el río,\r\n¡giran dando vueltas locas!\r\n\r\n[Verse 2 - Sumamos a Perlita]\r\nDamos un aplauso,\r\nescondo las manos,\r\nbaila hoy Perlita,\r\n¡mueve los deditos de lado!\r\nSuben a la nube,\r\nbajan con las gotas,\r\ncorren por el río,\r\n¡giran dando vueltas locas!\r\n\r\n[Verse 3 - Más rápido y alegre]\r\nDamos un aplauso,\r\nescondo las manos,\r\nmuevo los deditos,\r\n¡saludan de lado!\r\nSuben a la nube,\r\nbajan con las gotas,\r\ncorren por el río,\r\n¡giran dando vueltas locas!\r\n\r\n[Verse 4 - Con mucha energía]\r\nDamos un aplauso,\r\nescondo las manos,\r\nbaila hoy Perlita,\r\n¡mueve los deditos de lado!\r\nSuben a la nube,\r\nbajan con las gotas,\r\ncorren por el río,\r\n¡giran dando vueltas locas!\r\n\r\n[Outro]\r\n¡Estiren los brazos, Perlita!\r\n¡Un salto bien alto y a congelarse ya!\r\n¡Chau, juego, chau!",
     "dedication": "",
-    "accentColor": "#FF69B4"
+    "accentColor": "#4CAF50"
   },
   {
-    "id": "12",
+    "id": "13",
     "title": "Mi Caballito",
-    "artist": "Spinetta",
+    "artist": "Joan Manuel Serrat",
     "audioSrc": "/media/audio/Mi Caballito.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/Mi Caballito.jpg",
     "duration": 108,
     "lyrics": "[Verse 1 - Ritmo trotoncito alegre]\r\nCon mi caballito de madera voy jugando en la sala,\r\ncon mi caballito de madera voy jugando en la sala.\r\nSi me ven, si me ven, a jugar yo voy también,\r\nsi me ven, si me ven, a jugar yo voy también.\r\n\r\n[Verse 2 - El Lucerito]\r\nLa estrellita de la noche ilumina mi rincón,\r\nla estrellita de la noche ilumina mi rincón.\r\nSi me ven, si me ven, a jugar yo voy también,\r\nsi me ven, si me ven, a jugar yo voy también.\r\n\r\n[Verse 3 - Sumamos instrumentos]\r\nCon mis palmas voy cantando, mi caballo va trotando,\r\ncon mis palmas voy cantando, mi caballo va trotando.\r\nSi me ven, si me ven, a jugar yo voy también,\r\nsi me ven, si me ven, a jugar yo voy también.\r\n\r\n[Chorus - El momento más divertido y rápido]\r\n¡Taca-taca, taca-taca, taca-taca, taca-tá!\r\n¡Apúrate, caballito, que ya vamos a llegar!\r\n¡Taca-taca, taca-taca, taca-taca, taca-tá!\r\n¡Perlita va cabalgando, nadie la va a parar!\r\n\r\n[Verse 4 - Repetición con energía]\r\nMami Vicki y Papi Fede miran cómo va el corcel,\r\nIña y Titi se acomodan a jugar con ella bien.\r\nSi me ven, si me ven, a jugar yo voy también,\r\nsi me ven, si me ven, a jugar yo voy también.\r\n\r\n[Chorus - Repetición]\r\n¡Taca-taca, taca-taca, taca-taca, taca-tá!\r\n¡Apúrate, caballito, que ya vamos a llegar!\r\n¡Taca-taca, taca-taca, taca-taca, taca-tá!\r\n¡Perlita va cabalgando, nadie la va a parar!\r\n\r\n[Outro]\r\nSi me ven, si me ven, a jugar yo voy también,\r\n¡Perlita llegó al final! ¡Taca-tá!\r\n[Fin con rasgueo rápido de guitarra y risas infantiles]",
     "dedication": "",
-    "accentColor": "#4CAF50"
+    "accentColor": "#FFD700"
   },
   {
-    "id": "13",
+    "id": "14",
+    "title": "Mi Lili querida",
+    "artist": "Spinetta",
+    "audioSrc": "/media/audio/Mi Lili querida.mp3",
+    "coverType": "image",
+    "coverSrc": "/media/covers/Mi Lili querida.jpg",
+    "duration": 95,
+    "lyrics": "[Intro - Ukelele y xilofón saltarín]\r\n¡Lili, Lili, Lili querida!\r\n¡La tía abuela más divertida!\r\n\r\n[Verse 1]\r\nAhí viene Lili, \r\ntrae una sorpresa.\r\n¡Tiene un arcoíris \r\nen la cabeza!\r\n\r\n[Verse 2]\r\nAl lado va Dani,\r\nmirando el color.\r\n¡Le tiene paciencia \r\ncon mucho amor!\r\n\r\n[Chorus]\r\n¿De qué color \r\nes tu pelo hoy?\r\n¡Azul, rosa y verde, \r\nqué sorpresa me doy!\r\n¡Lili y Daniel, los quiero yo!\r\n\r\n[Verse 3]\r\nMe da un abrazo,\r\nme hace sonreír.\r\n¡Con su pelo loco \r\nnos hacen feliz!\r\n\r\n[Chorus]\r\n¿De qué color \r\nes tu pelo hoy?\r\n¡Azul, rosa y verde, \r\nqué sorpresa me doy!\r\n¡Lili y Daniel, los quiero yo!\r\n\r\n[Outro]\r\n¡Te quiero, Lili! ¡Gracias, Daniel por tenerle tanta paciencia!\r\n¡Chau!\r\n[Risas infantiles, beso volador y nota final de ukelele]",
+    "dedication": "",
+    "accentColor": "#9C27B0"
+  },
+  {
+    "id": "15",
     "title": "Perlita Bailarina",
-    "artist": "Joan Manuel Serrat",
+    "artist": "Charly García",
     "audioSrc": "/media/audio/Perlita Bailarina.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/Perlita Bailarina.jpg",
     "duration": 99,
     "lyrics": "",
     "dedication": "",
-    "accentColor": "#FFD700"
+    "accentColor": "#2196F3"
   },
   {
-    "id": "14",
+    "id": "16",
     "title": "Perlita Marchando",
-    "artist": "Spinetta",
+    "artist": "John Lennon",
     "audioSrc": "/media/audio/Perlita Marchando.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/Perlita Marchando.jpg",
     "duration": 189,
     "lyrics": "(Entra el famoso riff pesado con el bajo solo)\r\nYa llegó Perlita a la habitación,\r\nviene marchando con decisión.\r\nDejen las pantallas, miren para acá,\r\nque todo el equipo se va a activar.\r\nMami Vicki corre, Papi Fede igual,\r\nesta gran familia no tiene rival.\r\n\r\n[Pre-Chorus]\r\n(La batería empieza a marcar el pulso con fuerza)\r\nIña y Titi saltan sin parar,\r\nlos abuelos se unen a cantar.\r\n¡Todos juntos en este lugar!\r\n\r\n[Chorus]\r\n(Explosión de guitarras distorsionadas y batería pesada)\r\n¡Oooooh, a jugar se ha dicho hoy!\r\n¡Oooooh, a jugar se ha dicho hoy!\r\n¡Oooooh, a jugar se ha dicho hoy!\r\n¡Oooooh, a jugar se ha dicho hoy!\r\n\r\n[Verse 2]\r\n(Vuelve el ritmo de bajo marcado y seco)\r\nFuera las reuniones, fuera el celular,\r\nel reloj del tiempo se va a congelar.\r\nNadie nos detiene, vamos a vencer,\r\nhay un universo nuevo por hacer.\r\nLa capitana Perlita da la señal,\r\nun abrazo enorme, el triunfo final.\r\n\r\n[Pre-Chorus]\r\n(Crece la intensidad de la batería)\r\nIña y Titi saltan sin parar,\r\nlos abuelos se unen a cantar.\r\n¡Todos juntos en este lugar!\r\n\r\n[Chorus]\r\n(Máxima energía rockera)\r\n¡Oooooh, a jugar se ha dicho hoy!\r\n¡Oooooh, a jugar se ha dicho hoy!\r\n¡Oooooh, a jugar se ha dicho hoy!\r\n¡Oooooh, a jugar se ha dicho hoy!\r\n\r\n[Outro]\r\n(Solo de guitarra distorsionada imitando el riff)\r\n¡Perlita campeona!\r\n¡Uno, dos, tres, rock!",
     "dedication": "",
-    "accentColor": "#9C27B0"
+    "accentColor": "#E91E63"
   },
   {
-    "id": "15",
+    "id": "17",
     "title": "Perlita hasta el final",
-    "artist": "Charly García",
+    "artist": "Artista",
     "audioSrc": "/media/audio/Perlita hasta el final.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/Perlita hasta el final.jpg",
     "duration": 225,
     "lyrics": "El día empieza y salimos a jugar,\r\nno hay un problema que no podamos ganar.\r\nCerré la pantalla, el teléfono apagué,\r\ncon toda mi gente en la cancha me paré.\r\n\r\n[Pre-Chorus - Entran la batería y el bajo con fuerza]\r\nMami Vicki corre, Papi Fede va a saltar,\r\nlos abuelos miran y empiezan a alentar.\r\nIña con Titi ya armaron la función,\r\n¡y llega Perlita a gritar su canción!\r\n\r\n[Chorus - Todo el coro masivo y guitarras épicas]\r\n¡Somos campeones de este gran hogar!\r\n¡Y nadie nos va a parar!\r\nSomos un equipo, somos la unión,\r\n¡Perlita y su familia ganan la función!\r\n¡Hasta el final!\r\n\r\n[Verse 2 - Ritmo de rock marcado]\r\nDejamos las reuniones, el tiempo ya empezó,\r\nesta gran locura la magia la encendió.\r\nNo importa el cansancio, ganamos otra vez,\r\nbailando y jugando, saltamos uno, dos y tres.\r\n\r\n[Chorus - Máxima energía]\r\n¡Somos campeones de este gran hogar!\r\n¡Y nadie nos va a parar!\r\nSomos un equipo, somos la unión,\r\n¡Perlita y su familia ganan la función!\r\n¡Hasta el final!\r\n\r\n[Outro - Gran final con solo de guitarra y coro operístico]\r\n¡Somos los mejores!\r\n¡Iña, Titi, Mami, Papi y los abuelos también!\r\n¡Perlita campeona... hasta el final!",
     "dedication": "",
-    "accentColor": "#2196F3"
+    "accentColor": "#FF5722"
   },
   {
-    "id": "16",
+    "id": "18",
     "title": "Soy Grande",
-    "artist": "John Lennon",
+    "artist": "Artista",
     "audioSrc": "/media/audio/Soy Grande.mp3",
     "coverType": "image",
     "coverSrc": "/media/covers/Soy Grande.jpg",
     "duration": 108,
     "lyrics": "La-lai-la, la-lai-la, la-la-la-la-la-lai-la\nLa-lai-la, la-lai-la, la-la-la-la-la-la\n\n[Verse 1 - Afirmaciones]\n¡Perlita es valiente, genial y muy brillante!\n¡Perlita es valiente, genial y muy brillante!\nYo puedo, lo intento y sé que soy valiosa,\nyo puedo, lo intento y la vida es hermosa.\n\n[Chorus - El abrazo]\nAsí es como soy, un abrazo me doy,\ncon mucha alegría caminando voy.\nAsí es como soy, un abrazo me doy,\n¡Perlita es feliz con el día de hoy!\n\n[Verse 2 - El corazón]\nAsí es como soy, un abrazo me doy,\ntengo un corazoncito que cuido a donde voy.\nCon Mami, con Papi y mis hermanos también,\ncrecemos juntitos y la pasamos muy bien.\n\n[Verse 3 - Repetición con fuerza]\n¡Soy fuerte, soy libre, me gusta aprender!\n¡Perlita es enorme y tiene gran poder!\nYo puedo, lo intento y sé que soy valiosa,\nyo puedo, lo intento y la vida es hermosa.\n\n[Outro]\nLa-lai-la, la-lai-la, la-la-la-la-la-lai-la\n¡Sí, sí, sí!\n¡Perlita lo va a lograr!",
     "dedication": "",
-    "accentColor": "#E91E63"
+    "accentColor": "#00BCD4"
   }
 ];
